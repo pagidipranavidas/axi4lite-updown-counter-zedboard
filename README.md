@@ -77,20 +77,6 @@ The testbench `tb/tb_axi4lite_updown_counter.v` generates a 100 MHz clock (10 ns
 
 The waveform screenshot in `docs/simulation_waveform.png` is included as visual evidence from the original simulation. Run the testbench in a Verilog simulator compatible with the source files. The testbench instantiates the peripheral RTL directly; it does not instantiate the Zynq Processing System.
 
-## Hardware evidence
-
-### Vivado block design
-
-![Vivado block design](docs/block_design.png)
-
-### Simulation waveform
-
-![AXI4-Lite simulation waveform](docs/simulation_waveform.png)
-
-### ZedBoard LED demonstration
-
-![ZedBoard LED demonstration](docs/zedboard_led_demo.png)
-
 ## Recreating the Vivado design
 
 See [`vivado/block_design/README.md`](vivado/block_design/README.md) for the block-design components and what is not included. The supplied XDC maps the eight `led` output bits to the ZedBoard LED pins. The full Vivado project and generated Processing System wrapper must be recreated in Vivado using the appropriate board settings and the block-design reference image.
