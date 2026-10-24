@@ -17,8 +17,7 @@ The counter starts from zero after reset, runs when the enable bit is set, count
 
 ## Architecture
 
-```mermaid
-flowchart LR
+```text
     PS[Zynq-7000 Processing System] -->|AXI GP / AXI4-Lite| IC[AXI Interconnect]
     IC -->|S_AXI| CNT[Custom AXI4-Lite Up/Down Counter]
     CNT -->|reg1_out[7:0]| LED[ZedBoard User LEDs]
